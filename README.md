@@ -4,9 +4,9 @@
 ![Hal-Mumbles1](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles1.PNG)
 ![Hal-Mumbles2](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles2.PNG)
 
-- How to Install This Mumble Skin
+## How to Install This Mumble Skin
+To install this skin follow these steps.
 
- To install this skin follow these steps.
 1. Unzip this file and and extract it into your Documents folder.
 
 2. Launch Mumble, go to the "Configure" tab, then "Settings" from the drop down box,
