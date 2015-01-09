@@ -1,5 +1,6 @@
 #Hal Mumbles
-##A simplistic Mumble skin. _Installation tutorial below pictures_
+##A simplistic Mumble skin.
+_Installation tutorial below pictures_
 
 ![Hal-Mumbles1](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles1.PNG)
 ![Hal-Mumbles2](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles2.PNG)
