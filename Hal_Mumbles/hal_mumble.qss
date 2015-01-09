@@ -1,0 +1,193 @@
+/* Misc */
+
+/* QMainWindow#MainWidow is the bar above the channel tree box which features all of the buttons (record etc). */
+QMainWindow {
+	background: #EAEAEA;
+}
+
+QHeaderView {
+	background: #ff0000;
+}
+QHeaderView::section {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666666, stop: 1 #000000);
+	color: #ff0000;
+	border: 0.1em solid #666666;
+	padding: 0 0 0 0.3em;
+	height: 1.4em;
+	min-width: 40px;
+}
+QHeaderView::section:first, QHeaderView::section:only-one {
+	border-top-left-radius: 0.4em;
+}
+QHeaderView::section:last, QHeaderView::section:only-one {
+	border-top-right-radius: 0.4em;
+}
+
+/* !!!!! Message-Windows -- This is the background for the message pane*/
+QTextBrowser#qteLog {
+	background-color: #0F0F0F;
+	color: #eeeeee;
+	border: 0px solid #0F0F0F;
+	border-radius: 0em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+/* FORMATING FOR THE LOG */
+#qdwChat QTextEdit {
+  font-size: 13px;
+}
+
+a {
+  color: #2541ea;
+  text-decoration: underline;
+}
+/* green 00dc1f amber dea200*/
+.log-time {
+    color: #ff0000;
+    font-family: trebuchet ms;
+    font-weight:;
+}
+.log-source {
+    color: #EAEAEA;
+    font-family: verdana;
+}
+.log-target {
+    color: #EAEAEA;
+    font-family: verdana;
+}
+.log-channel {
+    color: #EAEAEA;
+    font-family: verdana;
+}
+.log-server {
+    color: #EAEAEA;
+    font-family: verdana;
+}
+.log-privilege {
+    color: red;
+    font-family: verdana;
+}
+
+
+/* Channel & Player */
+QTreeView {
+	background-color: #EAEAEA;
+	color: #0F0F0F;
+	border: 0px solid #666666;
+	border-radius: 0em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+QTreeView#qtvPlayers::branch:has-siblings:!adjoins-item {
+	border-image: url(skin:branch-vline.png) 0;
+}
+QTreeView#qtvPlayers::branch:has-siblings:adjoins-item {
+	border-image: url(skin:branch-more.png) 0;
+}
+QTreeView#qtvPlayers::branch:!has-children:!has-siblings:adjoins-item {
+	border-image: url(skin:branch-end.png) 0; 
+}
+QTreeView#qtvPlayers::branch:has-children:!has-siblings:closed,
+QTreeView#qtvPlayers::branch:closed:has-children:has-siblings {
+	border-image: none;
+	image: url(skin:branch-closed.png);
+}
+QTreeView#qtvPlayers::branch:open:has-children:!has-siblings,
+QTreeView#qtvPlayers::branch:open:has-children:has-siblings {
+	border-image: none;
+	image: url(skin:branch-open.png);
+}
+
+/* Menu */
+QMenuBar {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #232323, stop: 1 #000000);
+	color: #000000;
+	font-weight: bold;
+	border: 0px solid transparent;
+	border-bottom-color: #000000;
+}
+QMenuBar::item {
+	background: transparent;
+	color: #ffffff;
+	border: 0;
+	padding: 4px 8px;
+}
+QMenuBar::item:selected {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+}
+QMenuBar::item:pressed {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+}
+QMenu {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #000000, stop: 1 #000000);
+	color: #ffffff;
+	border: 0px solid #C9C9C9;
+	padding: 0;
+}
+QMenu::item {
+	background: 000000;
+	color: #ffffff;
+	padding: 0.2em 1.5em;
+	border: 0px solid transparent;
+}
+QMenu::item:selected {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+	border: 0px solid #C9C9C9;
+}
+QMenu::item:disabled {
+	color: #3a3a3a;
+}
+QMenu::item:disabled:selected {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #626262, stop: 1 #626262);
+	color: #000000;
+	border: 0px solid #C9C9C9;
+}
+QMenu::separator {
+	background: #000000;
+	height: 1px;
+}
+QMenu::indicator {
+	width: 13px;
+	height: 13px;
+	padding-left: 2px;
+}
+
+/* Configdialog */
+QListWidget#qlwIcons {
+	show-decoration-selected: 1;
+	color: #ffffff;
+	background: #000000;
+	border: 1px solid #555555;
+	padding-top: 2px;
+	padding-left: 2px;
+}
+QListWidget#qlwIcons::item {
+	height: 40px;
+}
+
+QListWidget#qlwIcons::item:selected {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+	border: 0.5px solid #aaaaaa;
+	border-radius: 0.5em;
+}
+QListWidget#qlwIcons::item:selected:!active {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+	border: 0.5px solid #555555;
+	border-radius: 0.5em;
+}
+QListWidget#qlwIcons::item:selected:active {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+	border: 0.5px solid #aaaaaa;
+	border-radius: 0.5em;
+}
+QListWidget#qlwIcons::item:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff0000, stop: 1 #e80000);
+	color: #ffffff;
+	border: 0.5px solid #aaaaaa;
+	border-radius: 0.5em;
+}
