@@ -2,8 +2,7 @@
 ##A simplistic Mumble skin.
 _Installation tutorial below pictures_
 
-![Hal-Mumbles1](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles1.PNG)
-![Hal-Mumbles2](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles2.PNG)
+![Hal-Mumbles3](https://raw.githubusercontent.com/MrKrucible/Hal-Mumbles/master/photos/Hal-Mumbles3.PNG)
 
 ## How to Install This Mumble Skin
 To install this skin follow these steps.
